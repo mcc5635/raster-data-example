@@ -8,7 +8,7 @@
   mkdir pachama_interview_data/
   gsutil -m cp -R gs://pachama-interview-data/* pachama_interview_data/
   ```
-- **Expected Folder Structure**:
+- **Once Downloaded, Expected Folder Structure**:
   ```
   pachama_interview_data/
     ├── rasters/
