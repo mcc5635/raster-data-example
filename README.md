@@ -51,7 +51,6 @@
   `Questions:`
   Informally describe the runtime and memory complexities of your solution as a
   function of:
-  The number of raster files
-  The number of coordinates
-  How would an ideal implementation change if you had to process 100x the number
-  of rasters and/or coordinates?
+  - The number of raster (.tif) files
+  - The number of coordinates
+  - How would an ideal implementation change if you had to process 100x the number of rasters and/or coordinates?
