@@ -15,7 +15,8 @@
     │   ├── 299_383_10.tif
     │   ├── 299_384_10.tif
     └── coordinates.geojson
-
+  ```
+  ```
   Data Format:
   All data can be downloaded from a public Google Cloud Storage bucket with the
   following commands using the gsutil tool:
