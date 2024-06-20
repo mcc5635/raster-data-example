@@ -18,6 +18,7 @@
     └── coordinates.geojson (part 2)
   ```
   ```
+  ```
   `Raster Files:`
   Rasters are stored in GeoTIFF format. Each file is named according to its spherical
   mercator XYZ tile name. There are 2 raster files in the GCS bucket under the rasters
