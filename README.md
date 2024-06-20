@@ -19,7 +19,7 @@
 
 ## 2. Data Requirements
 
-### Raster Files:
+`Raster Files`
 - Rasters are stored in GeoTIFF format.
 - Each file is named according to its spherical mercator XYZ tile name.
 - There are 2 raster files in the GCS bucket under the `rasters` directory.
@@ -30,7 +30,7 @@
 - The resulting numpy array for the file has the shape `[222, 984, 1305]`.
 - The coordinate reference system (CRS) for the rasters is WGS84.
 
-### Coordinates:
+`Coordinates`
 - The coordinate data is stored as a shapely `MultiPoint` geometry in a GeoJSON file.
 - Each coordinate represents a (longitude, latitude) pair.
 - You may assume that each coordinate listed exists in one of the raster files.
