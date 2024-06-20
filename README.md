@@ -20,6 +20,7 @@
 ## 2. Data Requirements
 
 `Raster Files`
+`../rasters/XXX_YYY_ZZ.tif`
 - File Format:
     - Rasters are stored in GeoTIFF format (metadata of .tif).
 - Naming Convention:
@@ -40,6 +41,7 @@
     - The coordinate reference system (CRS) for the rasters is WGS84.
 
 `Coordinates`
+`../coordinates.geojson`
 - The coordinate data is stored as a shapely `MultiPoint` geometry in a GeoJSON file.
 - Each coordinate represents a (longitude, latitude) pair.
 - You may assume that each coordinate listed exists in one of the raster files.
