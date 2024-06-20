@@ -3,7 +3,7 @@
 
 ## 1. Data Download Instructions
 - **Tool**: `gsutil`
-- **Commands**:
+- **Download from public Google Cloud Storage bucket with following commands using gsutil tool**:
   ```bash
   mkdir pachama_interview_data/
   gsutil -m cp -R gs://pachama-interview-data/* pachama_interview_data/
