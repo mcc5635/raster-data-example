@@ -20,21 +20,20 @@
   ```
  `Raster Files:`
   - Rasters are stored in GeoTIFF format. 
-  - Each file is named according to its spherical
-  mercator XYZ tile name. There are 2 raster files in the GCS bucket under the rasters
-  directory.
-  The rasters are derived from Landsat imagery. The spatial resolution of the raster data
-  is 30 meters. We stacked yearly images from 1984 to 2020, where each year's image
-  contains 6 bands of data (a raster band is analogous to an image channel). The result is
-  (37 years * 6 bands per year) = 222 total bands per raster file. Each raster has
-  dimensions of 984x1305 pixels. The resulting numpy array for the file has the shape
-  [222, 984, 1305] . The coordinate reference system (CRS) for the rasters is WGS84.
-  Coordinates
-  The coordinate data is stored as a shapely MultiPoint geometry in a GeoJSON file.
-  Each coordinate represents a (longitude, latitude) pair . You may assume that each
-  coordinate listed exists in one of the raster files.
-  The GeoJSON file is located at the root level of the bucket with the name
-  coordinates.geojson .
+  - Each file is named according to its spherical mercator XYZ tile name.
+  - There are 2 raster files in the GCS bucket under the rasters directory.
+  - The rasters are derived from Landsat imagery.
+  - The spatial resolution of the raster data is 30 meters. We stacked yearly images from 1984 to 2020, where each year's image
+  contains 6 bands of data (a raster band is analogous to an image channel).
+  - The result is (37 years * 6 bands per year) = 222 total bands per raster file.
+  - Each raster has dimensions of 984x1305 pixels.
+  - The resulting numpy array for the file has the shape [222, 984, 1305] .
+  - The coordinate reference system (CRS) for the rasters is WGS84.
+  `Coordinates:`
+  - The coordinate data is stored as a shapely MultiPoint geometry in a GeoJSON file.
+  - Each coordinate represents a (longitude, latitude) pair .
+  - You may assume that each coordinate listed exists in one of the raster files.
+  - The GeoJSON file is located at the root level of the bucket with the name coordinates.geojson .
   ```
   `Task:`
   The goal of the assignment is to efficiently index into the provided rasters and extract
