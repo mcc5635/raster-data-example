@@ -26,7 +26,7 @@
 - Source Imagery:
     - The rasters are derived from Landsat imagery.
 - Spatial Resolution:
-    - The spatial resolution of the raster data is 30 meters.
+    - The spatial resolution of the raster data is 30 meters `(30.0, 30.0) or 30m x 30m` (a tuple)
 - Temporal Coverage:
     - Yearly images have been stacked from 1984 to 2020.
     - Each year’s image contains 6 bands of data (a raster band is analogous to an image channel).
