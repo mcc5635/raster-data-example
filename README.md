@@ -21,20 +21,26 @@
 
 `Raster Files`
 
-- Rasters are stored in GeoTIFF format (metadata of .tif).
-- Each file is named according to its spherical mercator XYZ tile name (XXX_YYY_ZZ.tif).
-- There are 2 raster files in the GCS bucket under the `rasters` directory.
-- The rasters are derived from Landsat imagery.
-- The spatial resolution of the raster data is 30 meters. We stacked yearly images from 1984 to 2020, where each year's image contains 6 bands of data (a raster band is analogous to an image channel).
-- The result is (37 years * 6 bands per year) = 222 total bands per raster file.
-- Each raster has dimensions of 984x1305 pixels.
-- The resulting numpy array for the file has the shape `[222, 984, 1305]`.
-- The coordinate reference system (CRS) for the rasters is WGS84.
-
-- Raster Data
-  - Spatial Resolution: 30 meters
-  - Dimensions: 984x1305 pixels
-  - Numpy Array: '[222, 984, 1305]'
+1. **File Format**:
+    - Rasters are stored in GeoTIFF format (metadata of .tif).
+2. **Naming Convention**:
+    - Each file is named according to its spherical mercator XYZ tile name (XXX_YYY_ZZ.tif).
+3. **Storage Location**:
+    - There are 2 raster files in the GCS bucket under the `rasters` directory.
+4. **Source Imagery**:
+    - The rasters are derived from Landsat imagery.
+5. **Spatial Resolution**:
+    - The spatial resolution of the raster data is 30 meters.
+6. **Temporal Coverage**:
+    - Yearly images have been stacked from 1984 to 2020.
+    - Each year’s image contains 6 bands of data (a raster band is analogous to an image channel).
+7. **Total Bands**:
+    - The result is (37 years * 6 bands per year) = 222 total bands per raster file.
+8. **Dimensions**:
+    - Each raster has dimensions of 984x1305 pixels.
+    - The resulting numpy array for the file has the shape `[222, 984, 1305]`.
+9. **Coordinate Reference System (CRS)**:
+    - The coordinate reference system (CRS) for the rasters is WGS84.
 
 `Coordinates`
 - The coordinate data is stored as a shapely `MultiPoint` geometry in a GeoJSON file.
