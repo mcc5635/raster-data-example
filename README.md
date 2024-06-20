@@ -1,5 +1,5 @@
 
-# Pachama Interview Take-home Test Instructions
+# Example Instructions
 
 ## 1. Data Download Instructions
 - **Tool**: `gsutil`
