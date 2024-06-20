@@ -10,32 +10,16 @@
   ```
 - **Once Downloaded, Expected Folder Structure**:
   ```
+  `Schema:`
   pachama_interview_data/
     ├── rasters/
-    │   ├── 299_383_10.tif
-    │   ├── 299_384_10.tif
-    └── coordinates.geojson
+    │   ├── 299_383_10.tif  (part 1)
+    │   ├── 299_384_10.tif  (part 2)
+    └── coordinates.geojson (part 2)
   ```
   ```
-  Data Format:
-  All data can be downloaded from a public Google Cloud Storage bucket with the
-  following commands using the gsutil tool:
   
-  mkdir pachama_interview_data/
-  gsutil -m cp -R gs://pachama-interview-data/* pachama_interview_data/
-  
-  The resulting folder structure should look like:
-  
-  pachama_interview_data/
-  rasters/
-  299_383_10.tif
-  
-  Data Engineer Take-home Test 2
-  
-  299_384_10.tif
-  coordinates.geojson
-  
-  Raster Files:
+  `Raster Files:`
   Rasters are stored in GeoTIFF format. Each file is named according to its spherical
   mercator XYZ tile name. There are 2 raster files in the GCS bucket under the rasters
   directory.
@@ -52,19 +36,19 @@
   The GeoJSON file is located at the root level of the bucket with the name
   coordinates.geojson .
   
-  Task:
+  `Task:`
   The goal of the assignment is to efficiently index into the provided rasters and extract
   "chips". A chip is defined as a square of pixels centered around a coordinate for a
   given year.
-  
-  Ideas for extensions:
+
+  `Ideas for extensions:`
   Create a completely vectorized version of this approach with numpy.
   Use a machine learning library such as PyTorch or TensorFlow to create a
   dataloader for this dataset, where a labeled example is a tuple consisting of a chip
   and the shapely geometry for its center coordinate.
   Use mmap and/or caching to extract chips from a data stream
-  
-  Questions:
+
+  `Questions:`
   Informally describe the runtime and memory complexities of your solution as a
   function of:
   The number of raster files
