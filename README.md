@@ -23,8 +23,6 @@
 `../rasters/XXX_YYY_ZZ.tif`
 - File Format:
     - Rasters are stored in GeoTIFF format (metadata of .tif).
-- Naming Convention:
-    - Each file is named according to its spherical mercator XYZ tile name (XXX_YYY_ZZ.tif).
 - Source Imagery:
     - The rasters are derived from Landsat imagery.
 - Spatial Resolution:
