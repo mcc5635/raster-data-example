@@ -38,7 +38,7 @@
     - Each raster has dimensions of 984x1305 pixels.
     - The resulting numpy array for the file has the shape `[222, 984, 1305]`.
 - Coordinate Reference System (CRS):
-    - The coordinate reference system (CRS) for the rasters is WGS84.
+    - The coordinate reference system (CRS) for the rasters is WGS84 (default for AWS and Landsat).
 
 `Coordinates`
 `../coordinates.geojson`
