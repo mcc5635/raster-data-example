@@ -20,26 +20,23 @@
 ## 2. Data Requirements
 
 `Raster Files`
-
-1. **File Format**:
+- File Format:
     - Rasters are stored in GeoTIFF format (metadata of .tif).
-2. **Naming Convention**:
+- Naming Convention:
     - Each file is named according to its spherical mercator XYZ tile name (XXX_YYY_ZZ.tif).
-3. **Storage Location**:
-    - There are 2 raster files in the GCS bucket under the `rasters` directory.
-4. **Source Imagery**:
+- Source Imagery:
     - The rasters are derived from Landsat imagery.
-5. **Spatial Resolution**:
+- Spatial Resolution:
     - The spatial resolution of the raster data is 30 meters.
-6. **Temporal Coverage**:
+- Temporal Coverage:
     - Yearly images have been stacked from 1984 to 2020.
     - Each year’s image contains 6 bands of data (a raster band is analogous to an image channel).
-7. **Total Bands**:
+- Total Bands:
     - The result is (37 years * 6 bands per year) = 222 total bands per raster file.
-8. **Dimensions**:
+- Dimensions:
     - Each raster has dimensions of 984x1305 pixels.
     - The resulting numpy array for the file has the shape `[222, 984, 1305]`.
-9. **Coordinate Reference System (CRS)**:
+- Coordinate Reference System (CRS):
     - The coordinate reference system (CRS) for the rasters is WGS84.
 
 `Coordinates`
