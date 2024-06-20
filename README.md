@@ -18,8 +18,6 @@
     └── coordinates.geojson (part 2)
   ```
   ```
-  
-  ```
   `Raster Files:`
   Rasters are stored in GeoTIFF format. Each file is named according to its spherical
   mercator XYZ tile name. There are 2 raster files in the GCS bucket under the rasters
@@ -37,12 +35,10 @@
   The GeoJSON file is located at the root level of the bucket with the name
   coordinates.geojson .
   ```
-  ```
   `Task:`
   The goal of the assignment is to efficiently index into the provided rasters and extract
   "chips". A chip is defined as a square of pixels centered around a coordinate for a
   given year.
-  ```
   ```
   `Ideas for extensions:`
   Create a completely vectorized version of this approach with numpy.
@@ -51,7 +47,6 @@
   and the shapely geometry for its center coordinate.
   Use mmap and/or caching to extract chips from a data stream
   ```
-  ```
   `Questions:`
   Informally describe the runtime and memory complexities of your solution as a
   function of:
@@ -59,5 +54,4 @@
   The number of coordinates
   How would an ideal implementation change if you had to process 100x the number
   of rasters and/or coordinates?
-  ```
   ```
