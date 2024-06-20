@@ -54,4 +54,3 @@
   The number of coordinates
   How would an ideal implementation change if you had to process 100x the number
   of rasters and/or coordinates?
-  ```
