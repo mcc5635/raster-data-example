@@ -45,7 +45,6 @@
 - The coordinate data is stored as a shapely `MultiPoint` geometry in a GeoJSON file.
 - Each coordinate represents a (longitude, latitude) pair.
 - You may assume that each coordinate listed exists in one of the raster files.
-- The GeoJSON file is located at the root level of the bucket with the name `coordinates.geojson`.
 
 ## 3. Task
 The goal of the assignment is to efficiently index into the provided rasters and extract "chips". A chip is defined as a square of pixels centered around a coordinate for a given year.
