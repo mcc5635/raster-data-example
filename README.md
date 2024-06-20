@@ -29,6 +29,7 @@
   - Each raster has dimensions of 984x1305 pixels.
   - The resulting numpy array for the file has the shape [222, 984, 1305] .
   - The coordinate reference system (CRS) for the rasters is WGS84.
+  
   `Coordinates:`
   - The coordinate data is stored as a shapely MultiPoint geometry in a GeoJSON file.
   - Each coordinate represents a (longitude, latitude) pair .
