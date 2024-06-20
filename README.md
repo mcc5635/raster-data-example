@@ -12,16 +12,17 @@
   ```
   pachama_interview_data/
     ├── rasters/
-    │   ├── 299_383_10.tif  (part 1)
+    │   ├── 299_383_10.tif  (part 1) 
     │   ├── 299_384_10.tif  (part 2)
-    └── coordinates.geojson (part 2)
+    └── coordinates.geojson (part 2) (vector file)
   ```
 
 ## 2. Data Requirements
 
 `Raster Files`
-- Rasters are stored in GeoTIFF format.
-- Each file is named according to its spherical mercator XYZ tile name.
+
+- Rasters are stored in GeoTIFF format (metadata of .tif).
+- Each file is named according to its spherical mercator XYZ tile name (XXX_YYY_ZZ.tif).
 - There are 2 raster files in the GCS bucket under the `rasters` directory.
 - The rasters are derived from Landsat imagery.
 - The spatial resolution of the raster data is 30 meters. We stacked yearly images from 1984 to 2020, where each year's image contains 6 bands of data (a raster band is analogous to an image channel).
@@ -29,6 +30,11 @@
 - Each raster has dimensions of 984x1305 pixels.
 - The resulting numpy array for the file has the shape `[222, 984, 1305]`.
 - The coordinate reference system (CRS) for the rasters is WGS84.
+
+- Raster Data
+  - Spatial Resolution: 30 meters
+  - Dimensions: 984x1305 pixels
+  - Numpy Array: '[222, 984, 1305]'
 
 `Coordinates`
 - The coordinate data is stored as a shapely `MultiPoint` geometry in a GeoJSON file.
